@@ -1,0 +1,144 @@
+@import 'color';
+
+.contact-content {
+  header {
+    h2 {
+      margin-top: 87px;
+      text-align: center;
+    }
+  }
+
+  .ask-her {
+    display: flex;
+    flex-direction: column;
+    margin: 115px auto 0;
+    width: 450px;
+
+    button,
+    input,
+    textarea {
+      background-color: transparent;
+      border: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      letter-spacing: 4px;
+      outline: none;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      border-bottom: 2px solid $darkgray-opacity-10;
+      display: block;
+      font-size: 14px;
+      padding-bottom: 15px;
+      transition: border-color .15s ease-in-out;
+      width: 100%;
+    }
+
+    input {
+      margin: 0 0 40px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    textarea {
+      height: 38px;
+      max-height: 38px;
+      resize: none;
+    }
+
+    input,
+    textarea {
+      &:focus {
+        border-color: $orange;
+      }
+    }
+
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+      color: $darkgray;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input:-webkit-input-placeholder,
+    textarea:-webkit-input-placeholder {
+      color: $darkgray;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input.placeholder,
+    textarea.placeholder {
+      color: $darkgray;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    button {
+      align-self: flex-end;
+      border: 2px solid $orange;
+      cursor: pointer;
+      margin-top: 80px;
+      padding: 17px 0;
+      position: relative;
+      right: 0;
+      width: 320px;
+
+      span {
+        display: block;
+        font-size: 16px;
+        padding-right: 45px;
+        text-align: right;
+
+        &:before {
+          background: url('../images/icon-right-arrow-darkgray.svg') no-repeat;
+          content: '';
+          height: 15px;
+          position: absolute;
+          right: 0;
+          top: 21px;
+          transition: right .25s;
+          width: 26px;
+        }
+      }
+
+      &:before,
+      &:after {
+        background-color: $white;
+        content: '';
+        position: absolute;
+        right: -2px;
+        top: -2px;
+      }
+
+      &:before {
+        height: 58px;
+        width: 2px;
+      }
+
+      &:after {
+        height: 2px;
+        left: -2px;
+        transform: scaleX(.8);
+        transform-origin: right center;
+        transition: all .25s;
+      }
+
+      &:hover {
+        &:after {
+          transform: scaleX(1);
+        }
+        span:before {
+          right: -8px;
+        }
+      }
+    }
+  }
+}

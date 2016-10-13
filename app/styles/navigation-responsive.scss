@@ -1,0 +1,92 @@
+@import 'color';
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    background-color: $darkgray;
+    height: 100vh;
+    left: 0;
+    padding: 30% 0 0 8px;
+    top: 0;
+    transition: width .2s ease-in-out;
+    width: 40px;
+
+    a {
+      padding: 10px 0;
+    }
+
+    .menu-button {
+      margin-bottom: 30px;
+      .menu-text:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  .is-visible {
+    .sidebar {
+      width: 65%;
+
+      .menu-button {
+        transform: translateX(20px);
+
+        .menu-text {
+          color: inherit;
+          font-size: 14px;
+        }
+
+        .menu-icon {
+          height: 20px;
+          left: 128px;
+          top: 10px;
+          transition: opacity .5s ease-in-out .4s;
+          width: 20px;
+
+          &:before,
+          &:after {
+            height: 2px;
+            width: 20px;
+          }
+
+          &:before {
+            top: 6px;
+          }
+
+          &:after {
+            top: 6px;
+          }
+        }
+      }
+
+      .link {
+        margin-bottom: 30px;
+
+        a {
+          font-size: 16px;
+          left: 0;
+          padding-left: 20px;
+          transition: left .25s ease-in-out;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          left: inherit;
+        }
+
+        &.actif {
+          a {
+            left: 20px;
+
+            &:before {
+              height: 2px;
+              left: -20px;
+              top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

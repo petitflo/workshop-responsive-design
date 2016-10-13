@@ -1,0 +1,177 @@
+@media only screen and (max-width: 768px) {
+  .recipe-content {
+    figure {
+      flex-direction: column;
+
+      img {
+        height: 220px;
+        object-fit: cover;
+        width: 240px;
+      }
+
+      figcaption {
+        &:before {
+          height: 100px;
+        }
+
+        p:nth-child(2) {
+          margin-top: 20px;
+        }
+      }
+
+      p {
+        padding-left: 24px;
+      }
+    }
+
+    header {
+      h2 {
+        margin-left: 0;
+        margin-top: 120px;
+        padding-left: 0;
+        position: relative;
+        right: -20px;
+        text-align: right;
+      }
+
+      .visual-heading {
+        margin-top: -18px;
+        padding-left: 40px;
+
+        .attached-text {
+          padding-top: 18px;
+
+          &:before {
+            left: 170px;
+            top: -180px;
+            width: 110px;
+          }
+
+          &:after {
+            height: 270px;
+            left: 100px;
+            top: -40px;
+            width: 160px;
+            z-index: 1;
+          }
+
+          h3 {
+            font-size: 44px;
+            padding-left: 20px;
+            z-index: 10;
+          }
+        }
+      }
+    }
+
+    article {
+      .visual-ingredient {
+        margin-top: 60px;
+
+        .attached-text {
+          padding-top: 24px;
+          width: 260px;
+
+          &:before {
+            top: -180px;
+            width: 110px;
+          }
+
+          span {
+            font-size: 18px;
+          }
+
+          p:last-child {
+            padding-top: 6px;
+
+            &:before {
+              top: 0;
+            }
+          }
+        }
+
+        &:nth-child(odd) {
+          flex-direction: column;
+
+          .attached-text {
+            padding-right: 20px;
+
+            &:before {
+              left: -20px;
+              right: 0;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          .attached-text {
+            padding-left: 20px;
+
+            &:before {
+              left: 170px;
+              right: 10px;
+            }
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          padding-left: 60px;
+          padding-right: 0;
+
+          img {
+            align-self: flex-end;
+          }
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          padding-left: 40px;
+        }
+
+        &:nth-child(1) {
+          .attached-text {
+            &:after {
+              height: 262px;
+              left: -60px;
+              top: -40px;
+              width: 232px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .attached-text {
+            &:after {
+              height: 222px;
+              left: 70px;
+              top: 44px;
+              width: 206px;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          .attached-text {
+            &:after {
+              height: 262px;
+              left: -60px;
+              top: -40px;
+              width: 292px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+}

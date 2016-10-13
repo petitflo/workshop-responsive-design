@@ -1,0 +1,7 @@
+scss_files: './app/styles/*.css.scss'
+
+linters:
+  NestingDepth:
+    enabled: false
+    max_depth: 10
+    ignore_parent_selectors: true

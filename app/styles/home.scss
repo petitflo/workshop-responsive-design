@@ -1,0 +1,229 @@
+@import 'color';
+
+.home-content {
+  .heading {
+    background: url('../images/home-heading-background.png') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+
+    .social-network {
+      bottom: 20px;
+      position: absolute;
+      right: 20px;
+      width: 290px;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      li {
+        margin-right: 22px;
+        position: relative;
+
+        &:after {
+          color: $lightgray;
+          content: '-';
+          position: absolute;
+          right: -14px;
+        }
+
+        &:last-child:after {
+          content: '';
+        }
+      }
+    }
+  }
+
+  figure {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    figcaption {
+      position: relative;
+
+      &:before {
+        background-color: $orange;
+        content: '';
+        position: absolute;
+        z-index: 3;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 27px;
+
+    h2 {
+      margin-left: -30px;
+    }
+
+    span {
+      color: $darkgray-opacity-20;
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 1.7;
+      padding-left: 24px;
+      position: relative;
+
+      &:before {
+        background-color: $darkgray-opacity-10;
+        content: '';
+        left: 0;
+        position: absolute;
+        width: 4px;
+      }
+    }
+
+    .visual-amanda {
+      margin-top: -47px;
+      padding-left: 200px;
+
+      .attached-text {
+        padding-left: 40px;
+        padding-top: 220px;
+        width: 433px;
+
+        &:before {
+          height: 130px;
+          left: -98px;
+          top: 60px;
+          width: 308px;
+        }
+
+        &:after {
+          border: 4px solid $orange-opacity-06;
+          content: '';
+          height: 272px;
+          left: -100px;
+          position: absolute;
+          top: 372px;
+          width: 217px;
+          z-index: 1;
+        }
+      }
+
+      p {
+        margin-top: 20px;
+
+        &:before {
+          height: 100px;
+        }
+      }
+    }
+
+    .visual-recipe {
+      flex-direction: row-reverse;
+      margin-top: 100px;
+      padding-right: 108px;
+
+      .attached-text {
+        padding-right: 40px;
+        padding-top: 170px;
+        width: 326px;
+
+        &:before {
+          height: 40px;
+          right: -98px;
+          top: 90px;
+          width: 324px;
+        }
+      }
+
+      p:before {
+        height: 140px;
+      }
+    }
+  }
+
+  .the-menu {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      align-self: flex-end;
+      margin-top: 70px;
+      position: relative;
+      right: -30px;
+    }
+
+    .visual-menu {
+      align-self: center;
+      margin-top: -47px;
+      padding-left: 78px;
+
+      &:before {
+        border: 4px solid $darkgray;
+        content: '';
+        height: 332px;
+        left: 60px;
+        position: absolute;
+        top: 16px;
+        width: 516px;
+        z-index: 3;
+      }
+
+      figcaption {
+        padding-left: 20px;
+        padding-top: 160px;
+
+        &:before {
+          background-color: $orange;
+          content: '';
+          height: 40px;
+          left: -92px;
+          position: absolute;
+          top: 100px;
+          width: 308px;
+          z-index: 3;
+        }
+
+        a {
+          color: $darkgray;
+          display: block;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 5px;
+          line-height: 1.4;
+          padding-right: 20px;
+          position: relative;
+          text-transform: uppercase;
+          width: 158px;
+
+          &:after {
+            background: url('../images/icon-right-arrow-orange.svg') no-repeat;
+            bottom: 3px;
+            content: '';
+            height: 15px;
+            position: absolute;
+            right: 0;
+            transition: right .25s ease-in-out;
+            width: 26px;
+          }
+
+          &:hover {
+            &:after {
+              right: -6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

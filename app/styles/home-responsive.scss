@@ -1,0 +1,170 @@
+@media only screen and (max-width: 768px) {
+
+  .home-content {
+    .heading {
+      .social-network {
+        bottom: 20px;
+        left: calc(50% + 20px);
+        transform: translateX(-50%);
+
+        ul {
+          align-items: center;
+          flex-direction: column;
+          font-size: 12px;
+        }
+
+        li {
+          line-height: 2;
+          margin-right: 0;
+
+          &:after {
+            content: '';
+            right: 0;
+          }
+        }
+      }
+    }
+
+    figure {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-left: 0;
+      position: relative;
+      right: -20px;
+      text-align: right;
+    }
+
+    .about {
+      span {
+        font-size: 16px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .visual-amanda,
+      .visual-recipe {
+        .attached-text {
+          width: 280px;
+        }
+      }
+
+      .visual-amanda {
+        margin-top: -18px;
+        padding-left: 40px;
+
+        img {
+          height: 100%;
+          width: 240px;
+        }
+
+        .attached-text {
+          padding: 25px 20px 0;
+
+          &:before {
+            height: 130px;
+            left: 170px;
+            top: -286px;
+            width: 110px;
+          }
+
+          &:after {
+            height: 450px;
+            left: 80px;
+            top: -64px;
+            width: 204px;
+          }
+        }
+
+        p {
+          &:before {
+            height: 210px;
+          }
+        }
+      }
+
+      .visual-recipe {
+        flex-direction: column;
+        margin-top: 60px;
+        padding-left: 60px;
+        padding-right: 0;
+
+        img {
+          height: 300px;
+          margin-left: 20px;
+          object-fit: cover;
+        }
+
+        .attached-text {
+          padding-top: 20px;
+
+          &:before {
+            height: 100px;
+            left: -20px;
+            right: 0;
+            top: -240px;
+            width: 80px;
+          }
+        }
+
+        p:before {
+          height: 230px;
+        }
+      }
+    }
+
+    .the-menu {
+      h2 {
+        margin-top: 40px;
+      }
+
+      .visual-menu {
+        margin-top: -20px;
+        padding: 0 20px 0 76px;
+
+        img {
+          height: 260px;
+          object-fit: cover;
+          width: 224px;
+        }
+
+        &:before {
+          height: 252px;
+          left: 60px;
+          top: 16px;
+          width: 216px;
+        }
+
+        figcaption {
+          padding-left: 30px;
+          padding-top: 30px;
+
+          &:before {
+            height: 100px;
+            left: 164px;
+            top: -200px;
+            width: 80px;
+          }
+
+          a {
+            font-size: 18px;
+            line-height: 1.4;
+            padding-right: 40px;
+            width: 178px;
+
+            &:after {
+              bottom: 4px;
+              height: 15px;
+              right: 0;
+              transition: none;
+              width: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 50px;
+    }
+
+    h4 {
+      font-size: 38px;
+    }
+
+    .visual-identity {
+      height: 163px;
+      right: 30px;
+      top: 30px;
+      width: 220px;
+
+      h1 {
+        left: 23px;
+        position: relative;
+        top: 26px;
+      }
+
+      span {
+        &:nth-child(2) {
+          font-size: 7px;
+          left: 43px;
+          letter-spacing: 3px;
+          top: 35px;
+        }
+
+        &:last-child {
+          left: 86px;
+          top: 31px;
+        }
+      }
+    }
+  }
+
+}

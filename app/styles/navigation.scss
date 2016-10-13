@@ -1,0 +1,163 @@
+@import 'color';
+
+.sidebar {
+  left: 20px;
+  position: fixed;
+  right: 0;
+  top: 34%;
+  z-index: 100;
+
+  a {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;;
+    letter-spacing: 4px;
+    padding: 5px 0;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .menu-button {
+    margin-bottom: 15px;
+    position: relative;
+    transform: rotate(-90deg);
+    transform-origin: 22px 26px;
+    transition: transform .2s ease-in-out;
+
+    .menu-text:hover {
+      color: $orange;
+    }
+
+    .menu-icon {
+      display: block;
+      height: 14px;
+      left: 64px;
+      opacity: 0;
+      position: absolute;
+      top: 5px;
+      transition: opacity .4s ease-in-out .2s;
+      width: 14px;
+
+      &:before,
+      &:after {
+        background-color: $lightgray;
+        content: '';
+        position: absolute;
+      }
+
+      &:before {
+        top: 5px;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        top: 5px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .link {
+    margin-bottom: 15px;
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    transform: translateX(-100%);
+
+    a {
+      left: 0;
+      transition: left .25s ease-in-out;
+
+      &:before {
+        background-color: $lightgray;
+        content: '';
+        height: 1px;
+        left: -40px;
+        position: absolute;
+        top: 10px;
+        transition: left .25s ease-in-out;
+        width: 20px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &.actif {
+      a {
+        left: 20px;
+
+        &:before {
+          left: -30px;
+        }
+      }
+    }
+  }
+}
+
+.sidebar.dark,
+.midnightHeader.dark {
+  .menu-text {
+    color: $darkgray;
+  }
+
+  .menu-icon {
+    &:before,
+    &:after {
+      background-color: $darkgray;
+    }
+  }
+
+  .link a {
+    color: $darkgray;
+
+    &:before {
+      background-color: $darkgray;
+    }
+  }
+}
+
+.is-visible {
+  .menu-button {
+    transform: rotate(0deg);
+
+    .menu-text {
+      color: $orange;
+    }
+
+    .menu-icon {
+      opacity: 1;
+
+      &:before,
+      &:after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        width: 14px;
+      }
+    }
+  }
+
+  .menu {
+    .link {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+      transition: opacity .25s ease-in-out .25s, transform .25s ease-in-out;
+
+      &:nth-child(1){
+        transition-delay: .1s;
+      }
+
+      &:nth-child(2){
+        transition-delay: .2s;
+      }
+
+      &:nth-child(3){
+        transition-delay: .3s;
+      }
+    }
+  }
+}

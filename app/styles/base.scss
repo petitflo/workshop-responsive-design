@@ -1,0 +1,116 @@
+@import 'color';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $white;
+  color: $darkgray;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  .overall {
+    overflow: hidden;
+
+    .container {
+      clear: both;
+      height: auto !important;
+      height: 100%;
+      margin-bottom: -96px;
+      min-height: 100%;
+
+      .layout-footer {
+        height: 96px;
+      }
+    }
+  }
+
+  .visual-identity {
+    background: url('../images/visual-identity-line.svg') no-repeat center center;
+    background-size: cover;
+    height: 330px;
+    position: absolute;
+    right: 147px;
+    top: 280px;
+    width: 443px;
+
+    h1 {
+      left: 47px;
+      position: relative;
+      top: 52px;
+    }
+
+    span {
+      position: absolute;
+
+      &:nth-child(2) {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        left: 88px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        top: 71px;
+      }
+
+      &:last-child {
+        left: 174px;
+        top: 63px;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Abril Fatface', serif;
+}
+
+h1 {
+  color: $lightgray;
+  font-size: 60px;
+}
+
+h2 {
+  color: $darkgray-opacity-10;
+  font-size: 180px;
+  z-index: 1;
+}
+
+h3 {
+  color: $darkgray;
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+p,
+img {
+  z-index: 2;
+}
+
+a {
+  color: $lightgray;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
