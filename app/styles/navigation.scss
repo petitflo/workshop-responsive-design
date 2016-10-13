@@ -1,10 +1,12 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour la navigation
 .sidebar {
   left: 20px;
   position: fixed;
   right: 0;
-  top: 34%;
+  top: 28%;
   z-index: 100;
 
   a {
@@ -16,7 +18,7 @@
     position: relative;
     text-transform: uppercase;
   }
-
+  // Definition du bouton du menu
   .menu-button {
     margin-bottom: 15px;
     position: relative;
@@ -27,7 +29,7 @@
     .menu-text:hover {
       color: $orange;
     }
-
+    // Definition des elements formant le menu
     .menu-icon {
       display: block;
       height: 14px;
@@ -56,7 +58,7 @@
       }
     }
   }
-
+  // Definition de l'apparence des liens du menu
   .link {
     margin-bottom: 15px;
     opacity: 0;
@@ -83,7 +85,7 @@
     &:last-child {
       margin-bottom: 0;
     }
-
+    // Animation pour le hover et le lien actif
     &:hover,
     &.actif {
       a {
@@ -96,7 +98,9 @@
     }
   }
 }
-
+// Definition de nouvelles regles pour l'utilisation du plugin midNight
+// Egalement pour la page recipe et contact
+// Utilisation de couleurs foncees
 .sidebar.dark,
 .midnightHeader.dark {
   .menu-text {
@@ -118,15 +122,16 @@
     }
   }
 }
-
+// Definition des regles lorsque le menu est visible
 .is-visible {
+  // Arrangement du bouton
   .menu-button {
     transform: rotate(0deg);
 
     .menu-text {
       color: $orange;
     }
-
+    // Arrangement de l'icon du menu
     .menu-icon {
       opacity: 1;
 
@@ -141,6 +146,7 @@
   }
 
   .menu {
+    // Animation de l'entree des liens
     .link {
       opacity: 1;
       pointer-events: auto;

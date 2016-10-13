@@ -2,13 +2,13 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Workshop Responsive Design - Chef etoile fictif">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amanda Porto Cruz chef étoilée</title>
-
+    <!-- Declaration favicon -->
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="shortcut icon" href="./favicon.ico">
-
+    <!-- Appel des google font -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,600,700" rel="stylesheet">
 
     <!-- build:css styles/vendor.css -->
@@ -23,10 +23,15 @@
     <!-- endbuild -->
   </head>
   <body>
+    <!-- Container englobant la totalite du site -->
     <div class="overall">
+      <!-- Container pour le sticky footer -->
       <section class="container">
+        <!-- Debut de la page home -->
         <section class="home-content">
+          <!-- Definition du menu -->
           <div class="sidebar">
+            <!-- Balise supplementaire pour le plugin midNight -->
             <div class="midnightHeader default">
               <a class="menu-button" href="#menu">
                   <span class="menu-text">Menu</span>
@@ -47,7 +52,10 @@
               </nav>
             </div>
           </div>
+          <!-- Fin du menu -->
+          <!-- Definition de l'entete du site -->
           <section class="heading">
+            <!-- Identite visuelle du site -->
             <div class="visual-identity">
               <h1>
                 <span>Amanda</span>
@@ -55,16 +63,20 @@
                 <span>Cruz</span>
               </h1>
             </div>
+            <!-- Ajout des reseaux sociaux -->
             <aside class="social-network">
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
               </ul>
             </aside>
           </section>
+          <!-- Fin de l'entete -->
+          <!-- Debut du bloc a propos -->
           <article class="about" data-midnight="dark">
             <h2>À propos</h2>
+            <!-- Presentation du chef -->
             <figure class="visual-amanda">
               <img src="./images/home-img-amanda.png" alt="Profile Amanda Porto Cruz" />
               <figcaption class="attached-text">
@@ -72,6 +84,7 @@
                 <p>Originaire de Marseille, Amanda Porto-Cruz a été marqué dès l’enfance par la joyeuse ambiance des dîners organisés par sa famille. La cuisine pour elle était intimement liée au fait de donner du bonheur aux gens. C’est donc tout naturellement qu’elle s’est dirigée vers les métiers de la restauration.</p>
               </figcaption>
             </figure>
+            <!-- Choix du chef -->
             <figure class="visual-recipe">
               <img src="./images/home-img-recipe.png" alt="Plat de la région"/>
               <figcaption class="attached-text">
@@ -79,28 +92,40 @@
               </figcaption>
             </figure>
           </article>
+          <!-- Fin du bloc a propos -->
+          <!-- Debut du bloc amenant a la page menu -->
           <article class="the-menu" data-midnight="dark">
             <h2>Le menu</h2>
             <figure class="visual-menu">
               <img src="./images/home-img-restaurant.png" alt="Restaurant" />
               <figcaption>
+                <!-- Bouton de redirection -->
                 <a href="recipe.html">Découvrir les plats</a>
               </figcaption>
             </figure>
           </article>
+          <!-- Fin du bloc menu -->
         </section>
+        <!-- Fin de la page home -->
+        <!-- Layout pour le sticky footer -->
         <div class="layout-footer"></div>
       </section>
+      <!-- Fin container sticky footer -->
+      <!-- Debut du bloc footer -->
       <footer class="footer">
-        <a class="gobelins-school" href="#">
+        <!-- Element de l'ecole -->
+        <a class="gobelins-school" href="http://gobelins-school.com/">
           <img src="./images/icon-gobelins.svg" alt="L'école des Gobelins" />
         </a>
+        <!-- Quelques elements supplementaires -->
         <ul class="link-footer">
           <li>Projet école</li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </footer>
+      <!-- Fin du bloc footer -->
     </div>
+    <!-- Fin du bloc general -->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -108,10 +133,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- Appel de la librairie midNight -->
     <!-- build:js scripts/midnight.jquery.min.js -->
     <script src="scripts/midnight.jquery.min.js"></script>
     <!-- endbuild -->
 
+    <!-- Appel du fichier js principal -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

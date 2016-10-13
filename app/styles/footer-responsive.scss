@@ -1,12 +1,13 @@
+// Definition des regles responsives pour le footer
 @media only screen and (max-width: 768px) {
   .footer {
-    position: relative;
     margin-top: 60px;
-
+    position: relative;
+    // Arrangement de l'image de l'ecole
     .gobelins-school {
       margin-left: 54%;
     }
-
+    // Arrangement des elements de la partie basse
     .link-footer {
       background: url('../images/footer-background-mobile.png') no-repeat center center;
       flex-direction: column-reverse;

@@ -1,6 +1,7 @@
+// Definition des regles responsives pour la page home
 @media only screen and (max-width: 768px) {
-
   .home-content {
+    // Arrangement de l'entete
     .heading {
       .social-network {
         bottom: 20px;
@@ -24,18 +25,11 @@
         }
       }
     }
-
+    // Definition des elements communs
     figure {
       flex-direction: column;
     }
-
-    h2 {
-      margin-left: 0;
-      position: relative;
-      right: -20px;
-      text-align: right;
-    }
-
+    // Arrangement de la partie a propos
     .about {
       span {
         font-size: 16px;
@@ -44,14 +38,14 @@
       p {
         line-height: 1.5;
       }
-
+      // Definition elements communs
       .visual-amanda,
       .visual-recipe {
         .attached-text {
           width: 280px;
         }
       }
-
+      // Arrangement specifique pour la partie de presentation du chef
       .visual-amanda {
         margin-top: -18px;
         padding-left: 40px;
@@ -77,6 +71,13 @@
             top: -64px;
             width: 204px;
           }
+
+          h3:before {
+            height: 90px;
+            left: 182px;
+            top: -292px;
+            width: 48px;
+          }
         }
 
         p {
@@ -85,7 +86,7 @@
           }
         }
       }
-
+      // Arrangement specifique pour la partie des choix du chef
       .visual-recipe {
         flex-direction: column;
         margin-top: 60px;
@@ -115,12 +116,12 @@
         }
       }
     }
-
+    // Arrangement specifique pour la partie de redirection vers la page recipe
     .the-menu {
       h2 {
         margin-top: 40px;
       }
-
+      // Arrangement de la partie visuelle
       .visual-menu {
         margin-top: -20px;
         padding: 0 20px 0 76px;

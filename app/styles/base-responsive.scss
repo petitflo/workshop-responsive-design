@@ -1,4 +1,6 @@
+// Definition des regles responsives pour la navigation
 @media only screen and (max-width: 768px) {
+  // Arrangement des elements generiques a l'ensemble des pages pour le responsive
   body {
     font-size: 14px;
 
@@ -18,6 +20,17 @@
       font-size: 38px;
     }
 
+    .overall {
+      // Arrangement du sticky footer
+      .container {
+        margin-bottom: -60px;
+
+        .layout-footer {
+          height: 60px;
+        }
+      }
+    }
+    // Arrangement de l'identite visuelle
     .visual-identity {
       height: 163px;
       right: 30px;
@@ -44,6 +57,23 @@
         }
       }
     }
-  }
+    // Definition des regles generales pour l'ensemble des pages
+    .home-content h2,
+    .recipe-content header h2,
+    .contact-content header h2 {
+      margin-left: 0;
+      position: relative;
+      text-align: right;
+    }
 
+    .home-content h2,
+    .recipe-content header h2 {
+      right: -20px;
+    }
+
+    .recipe-content header h2,
+    .contact-content header h2 {
+      margin-top: 120px;
+    }
+  }
 }

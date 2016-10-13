@@ -2,13 +2,13 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Workshop Responsive Design - Chef etoile fictif">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contacter Amanda Porto Cruz</title>
-
+    <!-- Declaration favicon -->
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="shortcut icon" href="./favicon.ico">
-
+    <!-- Appel des google font -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,600,700" rel="stylesheet">
 
     <!-- build:css styles/vendor.css -->
@@ -23,8 +23,11 @@
     <!-- endbuild -->
   </head>
   <body>
+    <!-- Container englobant la totalite du site -->
     <div class="overall">
+      <!-- Container pour le sticky footer -->
       <section class="container">
+        <!-- Definition du menu -->
         <div class="sidebar dark">
           <a class="menu-button" href="#menu">
               <span class="menu-text">Menu</span>
@@ -44,14 +47,18 @@
             </ul>
           </nav>
         </div>
+        <!-- Fin du menu -->
+        <!-- Definition du header -->
         <header class="header">
+          <!-- Ajout des reseaux sociaux -->
           <aside class="social-network">
             <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
+              <li><a href="#facebook">Facebook</a></li>
+              <li><a href="#twitter">Twitter</a></li>
+              <li><a href="#instagram">Instagram</a></li>
             </ul>
           </aside>
+          <!-- Identite visuelle du site -->
           <a class="visual-identity" href="index.html">
             <h1>
               <span>Amanda</span>
@@ -60,10 +67,15 @@
             </h1>
           </a>
         </header>
+        <!-- Fin du header -->
+        <!-- Debut de la page de contact -->
         <section class="contact-content">
+          <!-- Entete de la page menu -->
           <header>
             <h2>Contact</h2>
           </header>
+          <!-- Fin de l'entete -->
+          <!-- Debut du formulaire de contact -->
           <form class="ask-her" action="contact.html" method="post">
             <input type="text" name="userfullname" placeholder="Nom Prénom">
             <input type="email" name="usermail" required="required" placeholder="Email">
@@ -71,17 +83,25 @@
             <textarea name="message" required="required" placeholder="Message"></textarea>
             <button type="submit"><span>Envoyer le message</spna></button>
           </form>
+          <!-- Fin du formulaire de contact -->
         </section>
+        <!-- Fin de la page de contact -->
+        <!-- Layout pour le sticky footer -->
         <div class="layout-footer"></div>
       </section>
+      <!-- Fin container sticky footer -->
+      <!-- Debut du bloc footer -->
       <footer class="footer">
-        <a class="gobelins-school" href="#">
+        <!-- Element de l'ecole -->
+        <a class="gobelins-school" href="http://gobelins-school.com/">
           <img src="./images/icon-gobelins.svg" alt="L'école des Gobelins" />
         </a>
+        <!-- Quelques elements supplementaires -->
         <ul class="link-footer">
           <li>Projet école</li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <!-- Fin du bloc footer -->
       </footer>
     </div>
     <!-- build:js scripts/vendor.js -->
@@ -91,10 +111,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- Appel de la librairie midNight -->
     <!-- build:js scripts/midnight.jquery.min.js -->
     <script src="scripts/midnight.jquery.min.js"></script>
     <!-- endbuild -->
 
+    <!-- Appel du fichier js principal -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

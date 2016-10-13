@@ -1,12 +1,14 @@
+// Definition des regles responsives pour le header de la page recipe et contact
 @media only screen and (max-width: 768px) {
   .header {
+    // Disparition du background
     background: none;
     height: 1px;
-
+    // Disparition des reseaux sociaux
     .social-network {
       display: none;
     }
-
+    // Arrangement de l'identite visuelle
     .visual-identity {
       height: 90px;
       right: 20px;

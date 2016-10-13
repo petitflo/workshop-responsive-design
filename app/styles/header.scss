@@ -1,12 +1,14 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour le header de la page recipe et contact
 .header {
   background: url('../images/home-heading-background.png') no-repeat top center;
   background-size: cover;
   height: 30px;
   position: relative;
   width: 100vw;
-
+  // Definition de reseaux socieuax
   .social-network {
     height: 30px;
     position: absolute;
@@ -40,7 +42,7 @@
       }
     }
   }
-
+  // Definition de l'identite visuelle
   .visual-identity {
     display: block;
     height: 165px;

@@ -1,4 +1,6 @@
-# workshop-gobelins-responsive-design
+# workshop-responsive-design
+
+Desktop 1280px & Mobile 320px
 
 Les fichiers sources sont dans le dossier app/
 

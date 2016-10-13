@@ -1,6 +1,9 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour la page recipe
 .recipe-content {
+  // Definition de l'arrangement des blocs figure commun
   figure {
     display: flex;
     z-index: 2;
@@ -54,12 +57,13 @@
     }
   }
 
+  // Definition du header
   header {
     h2 {
       margin-top: 68px;
       padding-left: 108px;
     }
-
+    // Definition de l'identite visuelle
     .visual-heading {
       margin-top: -47px;
       padding-left: 216px;
@@ -92,7 +96,7 @@
       }
     }
   }
-
+  // Definition de la presentation des differents plats
   article {
     .visual-ingredient {
       margin-top: 140px;

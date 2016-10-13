@@ -1,5 +1,7 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Definition des elements generiques de l'ensemble du site
 * {
   box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ body {
 
   .overall {
     overflow: hidden;
-
+    // Definition du sticky footer
     .container {
       clear: both;
       height: auto !important;
@@ -32,7 +34,7 @@ body {
       }
     }
   }
-
+  // Definition des elements communs pour l'identite visuelle
   .visual-identity {
     background: url('../images/visual-identity-line.svg') no-repeat center center;
     background-size: cover;
@@ -68,7 +70,7 @@ body {
     }
   }
 }
-
+// Definition des styles generiques pour l'ensemble des pages
 h1,
 h2,
 h3,

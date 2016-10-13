@@ -1,13 +1,16 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour la page home
 .home-content {
+  // Definition de l'entete
   .heading {
     background: url('../images/home-heading-background.png') no-repeat top center;
     background-size: cover;
     height: 100vh;
     position: relative;
     width: 100vw;
-
+    // Definition des reseaux sociaux
     .social-network {
       bottom: 20px;
       position: absolute;
@@ -41,7 +44,7 @@
       }
     }
   }
-
+  // Definition des elements communs
   figure {
     display: flex;
     position: relative;
@@ -58,7 +61,7 @@
       }
     }
   }
-
+  // Definition des elements pour la partie a propos
   .about {
     padding-top: 27px;
 
@@ -90,7 +93,7 @@
         width: 4px;
       }
     }
-
+    // Definition des elements pour la partie de presentation du chef
     .visual-amanda {
       margin-top: -47px;
       padding-left: 200px;
@@ -117,6 +120,21 @@
           width: 217px;
           z-index: 1;
         }
+
+        h3 {
+          position: relative;
+
+          &:before {
+            background: url('../images/icon-cooking.svg') no-repeat;
+            content: '';
+            height: 90px;
+            left: -108px;
+            position: absolute;
+            top: -140px;
+            width: 48px;
+            z-index: 4;
+          }
+        }
       }
 
       p {
@@ -127,7 +145,7 @@
         }
       }
     }
-
+    // Definition de la partie pour les choix du chef
     .visual-recipe {
       flex-direction: row-reverse;
       margin-top: 100px;
@@ -151,7 +169,7 @@
       }
     }
   }
-
+  // Definition pour la partie de redirection vers la page recipe
   .the-menu {
     display: flex;
     flex-direction: column;
@@ -162,7 +180,7 @@
       position: relative;
       right: -30px;
     }
-
+    // Definition de la partie visuelle
     .visual-menu {
       align-self: center;
       margin-top: -47px;

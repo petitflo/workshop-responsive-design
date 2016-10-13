@@ -1,10 +1,11 @@
 (function($) {
 	'use strict';
-
+  // Definition des elements generiques
 	var jDoc = $(document);
   var jWin = $(window);
 
 	jDoc.ready(function() {
+    // Declaration des variables utilisees
 		var	jOverall = $('.overall');
 		var jMenuButton = $('.menu-button');
     var	jSidebar = $('div.dark');
@@ -12,6 +13,7 @@
     // Pour l'initialisation du plugin midNight
     var isMobile = window.matchMedia('only screen and (max-width: 768px)');
 
+    // Animation du bouton menu
 		jMenuButton.on('click', function() {
 			jOverall.toggleClass('is-visible');
 		});
@@ -23,7 +25,7 @@
       $('div.sidebar').css({
         'height' : '133px',
         'left' : '20px',
-        'top' : '34%'
+        'top' : '28%'
       });
     }
     else {

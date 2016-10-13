@@ -1,19 +1,22 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour la page contact
 .contact-content {
+  // Definition du header
   header {
     h2 {
       margin-top: 87px;
       text-align: center;
     }
   }
-
+  // Definition de la partie formulaire
   .ask-her {
     display: flex;
     flex-direction: column;
     margin: 115px auto 0;
     width: 450px;
-
+    // Definition des elements communs pour le formulaire
     button,
     input,
     textarea {
@@ -56,7 +59,7 @@
         border-color: $orange;
       }
     }
-
+    // Surcharge des placeholder pour les differents navigateurs
     input:-moz-placeholder,
     textarea:-moz-placeholder {
       color: $darkgray;

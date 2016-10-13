@@ -1,15 +1,17 @@
+// Imporatation des couleurs
 @import 'color';
 
+// Debut du style pour le footer
 .footer {
   margin-top: 96px;
-
+  // Definition de l'apparence pour la partie ecole
   .gobelins-school {
     display: block;
     height: 25px;
     margin: 0 auto 16px;
     width: 16px;
   }
-
+  // Definition de l'arrangement des elements de la partie basse du footer
   .link-footer {
     background: url('../images/footer-background.png') no-repeat center center;
     background-size: cover;

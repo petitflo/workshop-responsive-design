@@ -1,6 +1,9 @@
+// Imporation des couleurs
 @import 'color';
 
+// Definition des regles responsives pour la navigation
 @media only screen and (max-width: 768px) {
+  // Arrangement du menu pour mobile
   .sidebar {
     background-color: $darkgray;
     height: 100vh;
@@ -13,7 +16,7 @@
     a {
       padding: 10px 0;
     }
-
+    // Arrangement des elements du bouton
     .menu-button {
       margin-bottom: 30px;
       .menu-text:hover {
@@ -21,19 +24,19 @@
       }
     }
   }
-
+  // Nouveau fonctionnement lorsque le menu est mobile
   .is-visible {
     .sidebar {
       width: 65%;
-
+      // Tout d'abord la partie du bouton menu
       .menu-button {
         transform: translateX(20px);
-
+        // Son texte
         .menu-text {
           color: inherit;
           font-size: 14px;
         }
-
+        // Son icone
         .menu-icon {
           height: 20px;
           left: 128px;
@@ -56,7 +59,7 @@
           }
         }
       }
-
+      // Et ses liens
       .link {
         margin-bottom: 30px;
 

@@ -1,5 +1,7 @@
+// Definition des regles responsives pour la page recipe
 @media only screen and (max-width: 768px) {
   .recipe-content {
+    // Arrangement des figures pour le responsive
     figure {
       flex-direction: column;
 
@@ -23,17 +25,12 @@
         padding-left: 24px;
       }
     }
-
+    // Arrangement du header
     header {
       h2 {
-        margin-left: 0;
-        margin-top: 120px;
         padding-left: 0;
-        position: relative;
-        right: -20px;
-        text-align: right;
       }
-
+      // Arrangement de l'identite
       .visual-heading {
         margin-top: -18px;
         padding-left: 40px;
@@ -63,7 +60,7 @@
         }
       }
     }
-
+    // Arrangement des differents plats
     article {
       .visual-ingredient {
         margin-top: 60px;
