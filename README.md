@@ -1,4 +1,4 @@
-# workshop-responsive-design
+# workshop-gobelins-responsive-design
 
 Les fichiers sources sont dans le dossier app/
 
